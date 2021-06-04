@@ -4,10 +4,12 @@ from sentence_transformers import SentenceTransformer
 
 app = Flask(__name__)
 
+'''
 @app.before_first_request                                                    
 def do_heavy_work():                                                        
   track_vectors = np.load('static/track_vectors_33K.npy', allow_pickle='TRUE').item()
   model = SentenceTransformer('paraphrase-MiniLM-L6-v2').eval()
+'''
 
 @app.route("/")
 def index():
