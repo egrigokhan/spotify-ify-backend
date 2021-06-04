@@ -1,6 +1,6 @@
 from flask import Flask
 import numpy as np
-# from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer
 
 app = Flask(__name__)
 
